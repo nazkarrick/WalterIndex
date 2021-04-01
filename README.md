@@ -17,7 +17,7 @@ The idea behind this project is to recreate a web based tool in the interest of 
 <details>
   <summary>Author</summary>
   <p>
-    :bust_in_silhouette: Software Engineer: Robert 'rikk' Guest - email: rikkDZN@icloud.com
+    :bust_in_silhouette: Software Engineer: Robert 'rikk' Guest - email: rikkxdzn@icloud.com
   </p>
 </details>
 <details>
