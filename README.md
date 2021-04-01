@@ -8,7 +8,7 @@ The idea behind this project is to recreate a web based tool in the interest of 
 
 ## Code Structure
 
-![alt text](images/planner.png)
+![alt text](images/Planner.png)
 
 ![alt text](images/scheduler.png)
 - - - - 
@@ -26,7 +26,7 @@ The idea behind this project is to recreate a web based tool in the interest of 
     :exclamation:Phil Winchester, Ben Manning, John Jacobs, & Ron Myers:exclamation:
   </p>
   <p>
-    :exclamation:API keys provided by NASA Open API - [NASA Open API](https://api.nasa.gov/#browseAPI)
+    :exclamation:API keys provided by NASA Open API - [NASA Open API](https://api.nasa.gov)
   </p>
 </details>
 
