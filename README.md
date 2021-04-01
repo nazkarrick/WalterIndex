@@ -8,8 +8,9 @@ The idea behind this project is to recreate a web based tool in the interest of 
 
 ## Code Structure
 
-![alt text](images/WI_planner.pdf)
+![alt text](images/WI_planner_001.png)
 
+![alt text](images/WI_planner_002.png)
 - - - - 
 
 ## Authors & Sources
