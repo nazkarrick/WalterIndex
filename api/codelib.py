@@ -10,7 +10,7 @@ def jprint(obj):
     # dumps() = takes a PYTHON obj, and converts it to a string
     text = json.dumps(obj, sort_keys=True, indent=4)
     print(text)
-response = requests.get('https://api.nasa.gov/planetary/apod?date=today')
+response = requests.get('http://api.open-notify.org/iss-now.json')
 
 jprint(response.json())
 # for loop to print keys in object
