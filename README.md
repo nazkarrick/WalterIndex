@@ -8,16 +8,16 @@ The idea behind this project is to recreate a web based tool in the interest of 
 
 ## Code Structure
 
-![alt text](images/WI_planner_001.png)
+![alt text](images/Planner.png)
 
-![alt text](images/WI_planner_002.png)
+![alt text](images/scheduler.png)
 - - - - 
 
 ## Authors & Sources
 <details>
   <summary>Author</summary>
   <p>
-    :bust_in_silhouette: Software Engineer: Robert 'rikk' Guest - email: rikkDZN@icloud.com
+    :bust_in_silhouette: Software Engineer: Robert 'rikk' Guest - email: rikkxdzn@icloud.com
   </p>
 </details>
 <details>
@@ -26,7 +26,7 @@ The idea behind this project is to recreate a web based tool in the interest of 
     :exclamation:Phil Winchester, Ben Manning, John Jacobs, & Ron Myers:exclamation:
   </p>
   <p>
-    :exclamation:API keys provided by NASA Open API - [NASA Open API](https://api.nasa.gov/#browseAPI)
+    :exclamation:API keys provided by NASA Open API - [NASA Open API](https://api.nasa.gov)
   </p>
 </details>
 
