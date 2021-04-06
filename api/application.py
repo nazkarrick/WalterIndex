@@ -16,9 +16,7 @@ PORT = 5000
 app = Flask(__name__)
 app.secret_key = 'SHH'
 
-###=== GLOBAL VARIABLES ===###
-api_nasa = requests.get('https://api.nasa.gov/planetary/apod?api_key=WWWXENdMExrIHV2WTMh3baouTEuBpkcmrQqRZtb8')
-issLoc = requests.get('http://api.open-notify.org/iss-now.json')
+###=== GLOBAL ===###
 class SearchForm(Form):
     dt = DateField('DatePicker', format='%Y-%m-%d')
 #########======#########
@@ -28,18 +26,23 @@ class SearchForm(Form):
 def index():
     form = SearchForm()
     if form.validate_on_submit():
-        return form.dt.data.strftime('%Y-%m-%d')
+        date_query = form.dt.data.strftime('%Y-%m-%d')
+        api_nasa = requests.get(f'https://api.nasa.gov/planetary/apod?api_key=WWWXENdMExrIHV2WTMh3baouTEuBpkcmrQqRZtb8&date={date_query}')
+        res = json.loads(api_nasa.content)
+        return res
     return render_template('main.html', form=form)
 ##===========##
 
 #########=== Navigation Bar ===#########
 @app.route('/apod', methods=['GET'])
 def get_apod():
-    res = json.loads(api_nasa.content)
+    apod_query = requests.get('https://api.nasa.gov/planetary/apod?api_key=WWWXENdMExrIHV2WTMh3baouTEuBpkcmrQqRZtb8')
+    res = json.loads(apod_query.content)
     return render_template('apod.html', res=res)
 
 @app.route('/iss', methods=['GET'])
 def get_iss():
+    issLoc = requests.get('http://api.open-notify.org/iss-now.json')
     issRes = json.loads(issLoc.content)
     return render_template('iss.html', issRes=issRes )
 ###########===============###############

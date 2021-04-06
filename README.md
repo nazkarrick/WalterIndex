@@ -27,8 +27,13 @@ The idea behind this project is to recreate a web based tool in the interest of 
   </p>
   <p>
     :exclamation:API keys provided by NASA Open API - [NASA Open API](https://api.nasa.gov)
+  </p>
+  <p>
     :exclamation:API keys provided by OPEN NOTIFY - [OPEN NOTIFY ORG](http://open-notify.org/)
+  </p>
     :exclamation:Stack Overflow: Date Picker Widget with Flask - [solvedBy Doobeh](https://stackoverflow.com/questions/26057710/datepickerwidget-with-flask-flask-admin-and-wtforms)
+  </p>
+  <p>
     :exclamation:Bootstrap Docs, Jinja2 Docs, Flask Docs, 
   </p>
 </details>
