@@ -1,14 +1,18 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 
 {% block content %}
-<div>
-    <span>
-        <ul>
-            <img src="{{ res['hdurl'] }}">
-            <li>Title: {{ res['title'] }}</li>
-            <li>Date: {{ res['date'] }}</li>
-            <li>Description: {{ res['explanation'] }}</li>
-        </ul>
-    </span>
+<div class="mx-auto" style="width: 50vw;">
+    <div class="container-fluid">
+            <div class="card border-dark mb-3">
+                <img src="{{ res['hdurl'] }}" class="card-img-top" class="img-fluid">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">Title: {{ res['title'] }}</div>
+                        <div class="col-md-4">Date: {{ res['date'] }}</div>
+                    </div>
+                    <p class="card-text">Description: {{ res['explanation'] }}</p>
+                </div>
+            </div>
+    </div>
 </div>
 {% endblock content %}

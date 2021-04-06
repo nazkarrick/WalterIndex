@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block main %}
+<div>
+    <form method="post">
+        {{ form.dt(class_='datepicker') }}
+        {{ form.hidden_tag() }}
+        <input type="submit" />
+    </form>
+</div>
+{% endblock main %}

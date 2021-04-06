@@ -23,10 +23,13 @@ The idea behind this project is to recreate a web based tool in the interest of 
 <details>
   <summary>Sources</summary>
   <p>
-    :exclamation:Phil Winchester, Ben Manning, John Jacobs, & Ron Myers:exclamation:
+    :exclamation:Phil Winchester, Ben Manning, John Jacobs, Glenn Brown, Raahima Ahmed, & Ron Myers:exclamation:
   </p>
   <p>
     :exclamation:API keys provided by NASA Open API - [NASA Open API](https://api.nasa.gov)
+    :exclamation:API keys provided by OPEN NOTIFY - [OPEN NOTIFY ORG](http://open-notify.org/)
+    :exclamation:Stack Overflow: Date Picker Widget with Flask - [solvedBy Doobeh](https://stackoverflow.com/questions/26057710/datepickerwidget-with-flask-flask-admin-and-wtforms)
+    :exclamation:Bootstrap Docs, Jinja2 Docs, Flask Docs, 
   </p>
 </details>
 
