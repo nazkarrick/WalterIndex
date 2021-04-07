@@ -4,6 +4,17 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 ## Walter Index
 The idea behind this project is to recreate a web based tool in the interest of Astronomy and general Science. This tool will enable user's to view information, add image to their favorite list, and login and signup. 
 
+## Usage
+We make the NASA API request when the server is loaded and the User is brought to the index page where they are presented with a datepicker Form:
+
+```
+- User has two options to input their date: 
+  1. Dropdown Calendar
+  2. Text input YYYY/MM/DD
+- User clicks submit
+- Form submit listener activates and renders a function to return the json object.
+```
+
 - - - -
 
 ## Code Structure
