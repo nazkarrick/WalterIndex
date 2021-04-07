@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 
 {% block main %}
-<div class="mx-auto" style="width: 50vw;">
+<!-- <div class="mx-auto" style="width: 50vw;">
     <div class="container-fluid">
         <div class="card border-light mb-3">
             <form method="post">
@@ -12,6 +12,25 @@
                 {{ form.hidden_tag() }}
                 <input type="submit" />
             </form>
+        </div>
+    </div>
+</div> -->
+<div class="container-fluid mx-auto pt-4">
+    <div class="row">
+        <div class="col-md-10 offset-md-2">
+            <div class="card border-light mt-5 bg-white pl-4 pr-4 pb-4 pt-4 rounded">
+                <form method="post">
+                    <fieldset>
+                        <legend>SEARCH DATE</legend>
+                        <div class="_content mt-2 _textGray small lead pb-4">
+                            - Note* Select within the Date Range 1995-06-16-Today's Date. Values outside that range will not return an object to view. DON'T BE THAT HUMAN!!!
+                        </div>
+                    </fieldset>
+                    {{ form.dt(class_='datepicker') }}
+                    {{ form.hidden_tag() }}
+                    <input type="submit" />
+                </form>
+            </div>
         </div>
     </div>
 </div>
