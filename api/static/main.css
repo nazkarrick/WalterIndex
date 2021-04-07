@@ -1,0 +1,18 @@
+.text-center {
+    text-align: center!important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5vw;
+    color: lightgray;
+}
+
+.apodCard {
+    background-color: snow;
+}
+
+.moveTop {
+    top: -1.5rem;
+    left: -1rem;
+}
+body {
+    background-color: #DBDBDB;
+}

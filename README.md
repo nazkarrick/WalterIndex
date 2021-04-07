@@ -13,6 +13,19 @@ We make the NASA API request when the server is loaded and the User is brought t
   2. Text input YYYY/MM/DD
 - User clicks submit
 - Form submit listener activates and renders a function to return the json object.
+- Flask receives and validates then returns the object using jinja to convert the object to a viewable html document. 
+- User is greeted with a converted JSON object
+```
+
+## Does it Meet Viable Product requirements?
+
+```
+- A search tool using a Powershell environment, web framework Library Flask, template language Jinja, and Bootstrap for Styling
+- Mailing List w/ Database storage  - Missing -
+- Responsive Website
+- Responsive Portfolio Page 
+- Deployable
+- Functional 
 ```
 
 - - - -
@@ -22,13 +35,15 @@ We make the NASA API request when the server is loaded and the User is brought t
 ![alt text](images/Planner.png)
 
 ![alt text](images/scheduler.png)
+
+![alt text](images/scheduler2.pdf)
 - - - - 
 
 ## Authors & Sources
 <details>
   <summary>Author</summary>
   <p>
-    :bust_in_silhouette: Software Engineer: Robert 'rikk' Guest - email: rikkxdzn@icloud.com
+    :bust_in_silhouette: Software Engineer: Robert 'rikk' Guest
   </p>
 </details>
 <details>
@@ -45,7 +60,7 @@ We make the NASA API request when the server is loaded and the User is brought t
     :exclamation:Stack Overflow: Date Picker Widget with Flask - [solvedBy Doobeh](https://stackoverflow.com/questions/26057710/datepickerwidget-with-flask-flask-admin-and-wtforms)
   </p>
   <p>
-    :exclamation:Bootstrap Docs, Jinja2 Docs, Flask Docs, 
+    :exclamation:Bootstrap Docs, Jinja Docs, Flask Docs [YT channel] Creators: Code Jana, FrontEndFunn,  
   </p>
 </details>
 

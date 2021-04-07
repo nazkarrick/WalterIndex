@@ -14,12 +14,12 @@ PORT = 5000
 app = Flask(__name__)
 app.secret_key = 'SHH'
 
-###=== GLOBAL ===###
+#####=== GLOBAL ===#####
 class SearchForm(Form):
     dt = DateField('DatePicker', format='%Y-%m-%d')
 #########======#########
 
-##== INDEX ==##
+#######====== INDEX ======#######
 @app.route('/', methods=['POST', 'GET'])
 def index():
     form = SearchForm()
@@ -30,7 +30,7 @@ def index():
         # to view JSON object comment out line 34 and replace with< return res  >
         return render_template('return_date.html', res=res)
     return render_template('main.html', form=form)
-##===========##
+########===========##################
 
 #########=== Navigation Bar ===#########
 @app.route('/apod', methods=['GET'])
@@ -45,6 +45,37 @@ def get_iss():
     issRes = json.loads(issLoc.content)
     return render_template('iss.html', issRes=issRes )
 ###########===============###############
+
+########===== MAIL LIST API =====##########
+from mailjet_rest import Client
+import os
+api_key = '05a8c6a9bd9006ba756f22db838ae3fc'
+api_secret = '1c1559462c80b9c203c1b7c10c3eee76'
+mailjet = Client(auth=(api_key, api_secret), version='v3.1')
+data = {
+    'Messages': [
+            {
+            "From": {
+                "Email": "designed.x.horo@gmail.com",
+                "Name": "Robert"
+            },
+            "To": [
+                {
+                "Email": "designed.x.horo@gmail.com",
+                "Name": "Robert"
+                }
+            ],
+            "Subject": "Greetings from Mailjet.",
+            "TextPart": "My first Mailjet email",
+            "HTMLPart": "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+            "CustomID": "AppGettingStartedTest"
+            }
+    ]
+}
+result = mailjet.send.create(data=data)
+print(result.status_code)
+print(result.json())
+
 
 # PYTHON: FLASK/JINJA2: NASA OPEN API, ISS OPEN API
 if __name__ == '__main__':
