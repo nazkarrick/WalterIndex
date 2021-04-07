@@ -1,10 +1,7 @@
 # FUNCTIONAL TASKS: 
-# [] FIX GLOBAL API 
-# [] Add borders within Card  /templates/apod  
-# [] Add UI styling to Cards
+# [] Mailing List API for Database
 # [] Visual for ISS Coordinates
-# [] Adjust spacing in Nav Bar
-# [] Stop user from searching further than 06-16-1995 & current date
+# [] Date Validator to prevent searching further than 06-16-1995 & current date
 
 from flask import Flask, render_template
 from flask_wtf import Form
