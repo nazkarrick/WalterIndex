@@ -40,9 +40,11 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 ```
 - Flask, Jinja, Bootstrap 4, CSS3, HTML
 - Deployed w/ Python Anywhere
-- Mailing List API  
+- Manipulation of several API's  
 - Responsive Website
 - Responsive Portfolio Page 
+- Clean UI
+- Display knowledge of Coding ability
 ```
 
 ## Missed Deadlines: Future Revisions!!
