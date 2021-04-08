@@ -2,10 +2,15 @@
 PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 ```
 ## Walter Index
-The idea behind this project is to recreate a web based tool in the interest of Astronomy and general Science. This tool will enable user's to view information, add image to their favorite list, and login and signup. 
+- The idea behind this project is to recreate a web based tool in the interest of Astronomy and general Science. This search tool will enable user's to cycle through information provided for the progress of ('extra')Terrestial exploration!
 
 ## Usage
-We make the NASA API request when the server is loaded and the User is brought to the index page where they are presented with a datepicker Form:
+- Make a request to NASA's OPEN API Key and display data using the magic of Python and Bootstrap!!
+
+## Goals
+- Explore the usage of API and data visualization tools
+- Refine my understanding of Python and its available supporting framworks
+- Build a front end using a different library than taught in class
 
 ```
 - User has two options to input their date: 
@@ -16,27 +21,36 @@ We make the NASA API request when the server is loaded and the User is brought t
 - Flask receives and validates then returns the object using jinja to convert the object to a viewable html document. 
 - User is greeted with a converted JSON object
 ```
-
-## Does it Meet Viable Product requirements?
+ - - - - 
+## Areas of Focus: Does it Meet Viable Product requirements?
 
 ```
-- A search tool using a Powershell environment, web framework Library Flask, template language Jinja, and Bootstrap for Styling
-- Mailing List w/ Database storage  - Missing -
+- Flask, Jinja, Bootstrap 4, CSS3, HTML
+- Deployed w/ Python Anywhere
+- Mailing List API  
 - Responsive Website
 - Responsive Portfolio Page 
-- Deployable
-- Functional 
 ```
 
+## Missed Deadlines: Future Revisions!!
+
+```
+- Date validation function for start date / end date queries.
+- Refactor index.html block elements
+- Collaborations with Data Sci. dev member to gain insight on Data viz model rendering
+- Implementing more impactual visual tools
+- Implementing brand logo into the Navigation Bar
+
+```
 - - - -
 
 ## Code Structure
 
-![alt text](images/Planner.png)
+![alt text](static/images/Planner.png)
 
-![alt text](images/scheduler.png)
+![alt text](static/images/scheduler.png)
 
-![alt text](images/scheduler2.pdf)
+![alt text](static/images/scheduler2.pdf)
 - - - - 
 
 ## Authors & Sources
@@ -60,7 +74,7 @@ We make the NASA API request when the server is loaded and the User is brought t
     :exclamation:Stack Overflow: Date Picker Widget with Flask - [solvedBy Doobeh](https://stackoverflow.com/questions/26057710/datepickerwidget-with-flask-flask-admin-and-wtforms)
   </p>
   <p>
-    :exclamation:Bootstrap Docs, Jinja Docs, Flask Docs [YT channel] Creators: Code Jana, FrontEndFunn,  
+    :exclamation:Bootstrap Docs, Jinja Docs, Flask Docs, [YT channel] Creators: Code Jana, FrontEndFunn,  
   </p>
 </details>
 

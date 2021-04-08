@@ -8,15 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--CSS call-->
     <link rel="stylesheet" href="/static/main.css">
-    <!-- SASS call -->
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <script src="less.js" type="text/javascript"></script> -->
-
     <title>WalterIndex</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Walter Index</a>
+        <a class="navbar-brand" href="/">WalterIndex</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,6 +20,9 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="/iss">ISS</a>
             <a class="nav-item nav-link" href="/apod">APOD</a>
+            {# Mailing List data #}
+            <a class="nav-item nav-link" href="#" data-token="1c73b8aa7d5d12e90a387a65232bcb42" onclick="mjOpenPopin(event, this)">MAILING</a>
+            {# Portfolio #}
             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </div>
         </div>
@@ -53,7 +52,9 @@
 
     {% endblock iss_location %}
 
-    
+        <!-- MAILING LIST DATA -->
+    <data id="mj-w-res-data" data-token="1c73b8aa7d5d12e90a387a65232bcb42" class="mj-w-data" data-apikey="6FdH" data-w-id="IxQ" data-lang="en_US" data-base="https://app.mailjet.com" data-width="640" data-height="410" data-statics="statics"></data>
+    <script type="text/javascript" src="https://app.mailjet.com/statics/js/widget.modal.js"></script>
         <!-- BOOTSTRAP JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

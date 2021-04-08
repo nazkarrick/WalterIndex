@@ -1,7 +1,11 @@
 # FUNCTIONAL TASKS: 
-# [] Mailing List API for Database
+"""
+UI ISSUES:
+1. 404 ERROR FOR NAVBAR IMAGE PATHWAY
+    <img src= "{{ url_for('static', filename = '/api/static/images/wilogo.png') }}" alt="WalterIndex">
+2. Leafjet Maps
+"""
 # [] Visual for ISS Coordinates
-# [] Date Validator to prevent searching further than 06-16-1995 & current date
 
 from flask import Flask, render_template
 from flask_wtf import Form
@@ -27,7 +31,7 @@ def index():
         date_query = form.dt.data.strftime('%Y-%m-%d')
         api_nasa = requests.get(f'https://api.nasa.gov/planetary/apod?api_key=WWWXENdMExrIHV2WTMh3baouTEuBpkcmrQqRZtb8&date={date_query}')
         res = json.loads(api_nasa.content)
-        # to view JSON object comment out line 34 and replace with< return res  >
+        # to view JSON object comment out line 34 and replace with < return res  >
         return render_template('return_date.html', res=res)
     return render_template('main.html', form=form)
 ########===========##################
@@ -45,37 +49,6 @@ def get_iss():
     issRes = json.loads(issLoc.content)
     return render_template('iss.html', issRes=issRes )
 ###########===============###############
-
-########===== MAIL LIST API =====##########
-from mailjet_rest import Client
-import os
-api_key = '05a8c6a9bd9006ba756f22db838ae3fc'
-api_secret = '1c1559462c80b9c203c1b7c10c3eee76'
-mailjet = Client(auth=(api_key, api_secret), version='v3.1')
-data = {
-    'Messages': [
-            {
-            "From": {
-                "Email": "designed.x.horo@gmail.com",
-                "Name": "Robert"
-            },
-            "To": [
-                {
-                "Email": "designed.x.horo@gmail.com",
-                "Name": "Robert"
-                }
-            ],
-            "Subject": "Greetings from Mailjet.",
-            "TextPart": "My first Mailjet email",
-            "HTMLPart": "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
-            "CustomID": "AppGettingStartedTest"
-            }
-    ]
-}
-result = mailjet.send.create(data=data)
-print(result.status_code)
-print(result.json())
-
 
 # PYTHON: FLASK/JINJA2: NASA OPEN API, ISS OPEN API
 if __name__ == '__main__':
