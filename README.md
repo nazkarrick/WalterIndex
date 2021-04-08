@@ -4,6 +4,9 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 ## Walter Index
 - The idea behind this project is to recreate a web based tool in the interest of Astronomy and general Science. This search tool will enable user's to cycle through information provided for the progress of ('extra')Terrestial exploration!
 
+## URL
+
+
 ## Usage
 - Make a request to NASA's OPEN API Key and display data using the magic of Python and Bootstrap!!
 
@@ -12,16 +15,26 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 - Refine my understanding of Python and its available supporting libraries and frameworks
 - Build using a front end not previously taught
 
+## Layout
 ```
-- User has two options to input their date: 
-  1. Dropdown Calendar
-  2. Text input YYYY/MM/DD
-- User clicks submit
-- Form submit listener activates and renders a function to return the json object.
-- Flask receives and validates then returns the object using jinja to convert the object to a viewable html document. 
-- User is greeted with a converted JSON object
+- Present User with a simple layout where the user naturally can learn to manipulate website.
+- Search Date is provided with two options:
+  1. Dropdown Calender
+  2. Manually input date
+- Upon submit, a request to the API is sent and response is rendered in a JSON object, then rendered to HTML
+- User has an option to register for mailing list with the MAILING link inside the navigation bar. 
 ```
- - - - - 
+
+## Code Structure
+
+![alt text](api/static/images/Planner.png)
+
+![alt text](api/static/images/scheduler.png)
+
+![alt text](api/static/images/scheduler2.png)
+- - - - 
+
+- - - - 
 ## Areas of Focus: Does it Meet Viable Product requirements?
 
 ```
@@ -35,6 +48,8 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 ## Missed Deadlines: Future Revisions!!
 
 ```
+- Decided against the Django implementation. Possible code conversion in future updates!
+- Database implementation based on User Traffic results. 
 - Date validation function for start date / end date queries.
 - Refactor index.html block elements
 - Collaborations with Data Sci. dev member to gain insight on Data viz model rendering
@@ -43,16 +58,6 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 
 ```
 - - - -
-
-## Code Structure
-
-![alt text](api/static/images/Planner.png)
-
-![alt text](api/static/images/scheduler.png)
-
-![alt text](api/static/images/scheduler2.pdf)
-- - - - 
-
 ## Authors & Sources
 <details>
   <summary>Author</summary>
