@@ -52,11 +52,9 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 ```
 - Decided against the Django implementation. Possible code conversion in future updates!
 - Favorites and Social Media icons will be included in future updates. Db is dependent on User Traffic.
-- Database implementation based on User Traffic results. 
 - Date validation function for start date / end date queries.
 - Refactor index.html block elements
 - Collaborations with Data Sci. dev member to gain insight on Data viz model rendering
-- Implementing more impactual visual tools
 - Implementing brand logo into the Navigation Bar
 
 ```
