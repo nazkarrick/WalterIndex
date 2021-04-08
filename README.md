@@ -9,8 +9,8 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 
 ## Goals
 - Explore the usage of API and data visualization tools
-- Refine my understanding of Python and its available supporting framworks
-- Build a front end using a different library than taught in class
+- Refine my understanding of Python and its available supporting libraries and frameworks
+- Build using a front end not previously taught
 
 ```
 - User has two options to input their date: 
@@ -46,11 +46,11 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 
 ## Code Structure
 
-![alt text](static/images/Planner.png)
+![alt text](api/static/images/Planner.png)
 
-![alt text](static/images/scheduler.png)
+![alt text](api/static/images/scheduler.png)
 
-![alt text](static/images/scheduler2.pdf)
+![alt text](api/static/images/scheduler2.pdf)
 - - - - 
 
 ## Authors & Sources
