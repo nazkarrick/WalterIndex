@@ -1,10 +1,8 @@
 # FUNCTIONAL TASKS: 
 """
-UI ISSUES:
-1. Leaflet Maps
+FOUND UI ISSUES:
+1. Data Visualization Tools are not properly rendering. 
 """
-# [] Visual for ISS Coordinates
-
 from flask import Flask, render_template
 from flask_wtf import Form
 from wtforms.fields.html5 import DateField
