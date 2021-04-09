@@ -54,9 +54,7 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
 - Favorites and Social Media icons will be included in future updates. Db is dependent on User Traffic.
 - Date validation function for start date / end date queries.
 - Refactor index.html block elements
-- Collaborations with Data Sci. dev member to gain insight on Data viz model rendering
-- Implementing brand logo into the Navigation Bar
-
+- Collaborate with Data Sci. dev member to gain insight on Data viz model rendering
 ```
 - - - -
 ## Authors & Sources
@@ -77,6 +75,19 @@ PROJECT 4 (SOLO): General Assembly Software Engineering Immersive 1-19
   <p>
     :exclamation:API keys provided by OPEN NOTIFY - [OPEN NOTIFY ORG](http://open-notify.org/)
   </p>
+  <p>
+  :exclamation:Data Visualization tool provided by Leaflet - [Leaflet JS](https://leafletjs.com/)
+  </p>
+  <p>
+  :exclamation: Mapping Tools provided by MapBox - [MapBox](https://www.mapbox.com/)
+  </p>
+  <p>
+  :exclamation:API keys provided by Mail Jet - [Mail API](http://www.mailjet.com/)
+  </p>
+  <p>
+  :exclamation:Logo made using Inkscape
+  </p>
+  <p>
     :exclamation:Stack Overflow: Date Picker Widget with Flask - [solvedBy Doobeh](https://stackoverflow.com/questions/26057710/datepickerwidget-with-flask-flask-admin-and-wtforms)
   </p>
   <p>

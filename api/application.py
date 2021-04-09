@@ -1,9 +1,7 @@
 # FUNCTIONAL TASKS: 
 """
 UI ISSUES:
-1. 404 ERROR FOR NAVBAR IMAGE PATHWAY
-    <img src= "{{ url_for('static', filename = '/api/static/images/wilogo.png') }}" alt="WalterIndex">
-2. Leafjet Maps
+1. Leaflet Maps
 """
 # [] Visual for ISS Coordinates
 
