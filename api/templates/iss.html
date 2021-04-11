@@ -1,12 +1,13 @@
 {% extends 'index.html' %}
 
-<!-- {% block head %}
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+{% block head %}
+<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <style>
     #map { height: 180px; }
-</style>
-{% endblock head %} -->
+</style> -->
+
+{% endblock head %}
 
 {% block iss_location %}
 <!-- <div id="map"></div>
@@ -22,12 +23,13 @@
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
     </script> -->
+    {# Temporary Graphic until Data Viz Tool is functional #}
     <div class="container-fluid mx-auto pt-4">
         <div class="row">
             <div class="col-md-7 offset-md-2">
                 <div class="card border-light mt-5 bg-white pl-4 pr-4 pb-4 pt-4 rounded">
                     <img src= "{{ url_for('static', filename = 'images/broken.jpeg') }}" alt="Site Under Construction">
-                    RIPT to SCRIPT!! DATA ViZ broken!
+                    {{ issRes['iss_position'] }} Error! More coffee less breaks...Page is under Construction!
                     </form>
                 </div>
             </div>

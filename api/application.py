@@ -27,7 +27,7 @@ def index():
         date_query = form.dt.data.strftime('%Y-%m-%d')
         api_nasa = requests.get(f'https://api.nasa.gov/planetary/apod?api_key=WWWXENdMExrIHV2WTMh3baouTEuBpkcmrQqRZtb8&date={date_query}')
         res = json.loads(api_nasa.content)
-        # to view JSON object comment out line 34 and replace with < return res  >
+        # to view JSON object comment out line 31 and replace with < return res  >
         return render_template('return_date.html', res=res)
     return render_template('main.html', form=form)
 ########===========##################
@@ -44,8 +44,12 @@ def get_iss():
     issLoc = requests.get('http://api.open-notify.org/iss-now.json')
     issRes = json.loads(issLoc.content)
     return render_template('iss.html', issRes=issRes )
+
+@app.route('/portfolio', methods=['GET'])
+def portfolio():
+    return render_template('portfolio.html')
 ###########===============###############
 
-# PYTHON: FLASK/JINJA2: NASA OPEN API, ISS OPEN API
+# PYTHON: FLASK/JINJA2: NASA OPEN API, ISS OPEN API, MAIL LIST API, MAPTOOL API
 if __name__ == '__main__':
     app.run(debug=DEBUG, port=PORT)

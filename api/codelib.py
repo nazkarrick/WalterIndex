@@ -62,4 +62,3 @@ jprint(response.json())
 # result = mailjet.send.create(data=data)
 # print(result.status_code)
 # print(result.json())
-
