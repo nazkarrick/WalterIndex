@@ -9,6 +9,7 @@ from wtforms.fields.html5 import DateField
 import requests
 import json
 
+
 DEBUG = True
 PORT = 5000
 app = Flask(__name__)
@@ -43,7 +44,7 @@ def get_apod():
 def get_iss():
     issLoc = requests.get('http://api.open-notify.org/iss-now.json')
     issRes = json.loads(issLoc.content)
-    return render_template('iss.html', issRes=issRes )
+    return render_template('iss.html', issRes=issRes)
 
 @app.route('/portfolio', methods=['GET'])
 def portfolio():
